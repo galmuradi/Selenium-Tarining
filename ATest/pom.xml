@@ -8,13 +8,7 @@
 
   <dependencies>
 
-    <dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-api</artifactId>
-    <version>2.0rc2</version>
-    <scope>test</scope>
-    </dependency>
-
+   
      <dependency>
         <groupId>org.seleniumhq.selenium</groupId>
         <artifactId>selenium-java</artifactId>
@@ -35,32 +29,24 @@
     <version>2.53.0</version>
      <scope>test</scope>
 </dependency>
- <dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-remote-driver</artifactId>
-    <version>2.53.0</version>
-</dependency>
 
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-remote-driver</artifactId>
-    <version>2.53.0</version>
-    <scope>test</scope>
-</dependency>
+
 
   </dependencies>
 
-    <reporting>
+   <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-report-plugin</artifactId>
+        <artifactId>maven-surefire-plugin</artifactId>
         <version>3.0.0-M5</version>
         <configuration>
-          <showSuccess>false</showSuccess>
+        <suiteXmlFiles>
+          <suiteXmlFiles>testng.xml</suiteXmlFiles>
+          </suiteXmlFiles>
         </configuration>
       </plugin>
     </plugins>
-  </reporting>
+  </build>
 
 </project>

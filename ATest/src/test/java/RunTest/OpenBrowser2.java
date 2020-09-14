@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class OpenBrowser2 {
 	
     @Test
-    public void Test2() 
+    public void Test3() 
     {
        
             
