@@ -7,8 +7,6 @@
   <name>SecondMaven</name>
 
   <dependencies>
-
-   
      <dependency>
         <groupId>org.seleniumhq.selenium</groupId>
         <artifactId>selenium-java</artifactId>
@@ -29,11 +27,8 @@
     <version>2.53.0</version>
      <scope>test</scope>
 </dependency>
-
-
-
   </dependencies>
-
+  
    <build>
     <plugins>
       <plugin>
